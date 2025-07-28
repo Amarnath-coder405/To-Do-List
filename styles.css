@@ -1,8 +1,48 @@
-body,h1,h2,h3,h4,h5{
-	font-family: sans-serif;
+*{
+  box-sizing: border-box;
 }
-body{
-	font-size: 16px;
-	.w3-half img{margin-bottom: -6px; margin-top:16px;opacity: 0.8;cursor: pointer}
-	.w3-half img:hover{opacity: 1}
+.sidebar{
+  height: 100%;
+  width: 200px;
+  margin: 0;
+  padding: 0;
+  background-color: darkblue;
+  position: fixed;
+  overflow: auto;
+}
+/* Sidebar links */
+.sidebar a{
+  display: block;
+  color: white;
+  padding: 16px;
+  text-decoration: none;
+}
+/* Active/Current link */
+.sidebar a.active{
+  background-color: #40AA6D;
+  color: white;
+}
+/* Links on mouse-over */
+.sidebar a:hover:not(.active){
+  background-color: lightblue;
+  color: white;
+}
+/* On screens that are less than 700px wide, make 
+the sidebar into a topbar */
+@media screen and (max-width: 700px){
+  .sidebar{
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+/* On screens that are less than 400px, display the
+bar vertically, instead of horizontally */
+@media screen and (max-width: 400px){
+  .sidebar a{
+    text-align: center;
+    float: none;
+  }
 }
