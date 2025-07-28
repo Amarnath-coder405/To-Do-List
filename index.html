@@ -14,19 +14,68 @@
     <a href="#">My Tasks</a>
     <a href="#">Help</a>
 </div>
-<div class="container">
-    <div class="row">
-        <div class="column">
-            <h2>TO-DO-LIST</h2>
+<div class="row">
+  <div class="column1">
+    <h2>TO-DO</h2>
+    <p>28 July 2025</p>
+    <h2 style="text-align: right;">+ Add Task</h2><br>
+    <div class="task-container">
+        <h3>Task title</h3>
+        <p>Task description</p>
+        <img src="images/task1" alt="task-image"></img>
+        <button onclick="submit">Edit</button>
+        <button onclick="submit">Delete</button>
+    </div>
+    <div class="task-container">
+        <h3>Task title</h3>
+        <p>Task description</p>
+        <img src="images/task2" alt="task-image"></img>
+        <button onclick="submit">Edit</button>
+        <button onclick="submit">Delete</button>
+    </div>
+    <div class="task-container">
+        <h3>Task title</h3>
+        <p>Task description</p>
+        <img src="images/task3" alt="task-image"></img>
+        <button onclick="submit">Edit</button>
+        <button onclick="submit">Delete</button>
+    </div>
+  </div>
+  <div class="column2">
+    <h2>TASK Status</h2>
+    <div class="task-status-container">
+        <div class="task-circle" data-percent="80" data-color="#4caf50">
+            <div class="inner-circle"></div>
+            <span class="percent-text">34%</span>
+            <p class="label">completed</p>  
         </div>
-        <div class="column">
-            <div class="column-1">
-                <h2>TASK STATUS</h2>
-            </div>
-            <div class="column-2">
-                <h2>COMPLETED TASK</h2>
-            </div>
+        <div class="task-circle" data-percent="80" data-color="#4caf50">
+            <div class="inner-circle"></div>
+            <span class="percent-text">34%</span>
+            <p class="label">in progress</p>
+        </div>
+        <div class="task-circle" data-percent="80" data-color="#4caf50">
+            <div class="inner-circle"></div>
+            <span class="percent-text">34%</span>
+            <p class="label">Not started</p>
+             <h3></h3>
         </div>
     </div>
+  </div>
+  <div class="column3">
+      <h2>completed Tasks</h2>
+      <div class="comp-task-container">
+        <h3>Task title</h3>
+        <p>Task Description</p>
+      </div>
+      <div class="comp-task-container">
+        <h3>Task title</h3>
+        <p>Task Description</p>
+      </div>
+      <div class="comp-task-container">
+        <h3>Task title</h3>
+        <p>Task Description</p>
+      </div>
+  </div>
 </div>
 </body>

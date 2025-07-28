@@ -51,27 +51,116 @@ bar vertically, instead of horizontally */
 }
 
 /*content section*/
-*{
+* {
   box-sizing: border-box;
 }
-/* display content in grid system */
-.container{
-  display: grid;
-  gap : 50px;
-  margin-left: 200px;
-  padding-left: 20px;
-}
-/* Create two equal columns that floats next
-to each other */
-.column {
+/* Create two equal columns that floats next to each other */
+.column1 {
+  display:block;
+  margin-bottom: 16px;
+  line-height: 1.5;
   float: left;
   width: 50%;
   padding: 10px;
-  height: 300px;
+  margin-left: 15%;
+  background-color: lightgray;
+  height: 800px; /* Should be removed. Only for demonstration */
 }
-/* cloumn after giving row */
-.row:after{
-  content:"";
+/* Create two equal columns that floats next to each other */
+.column2 {
+  display:block;
+  margin-bottom: 16px;
+  line-height: 1.5;
+  float: right;
+  width: 30%;
+  padding: 10px;
+  background-color: lightgray;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
   display: table;
   clear: both;
+}
+/* task description */
+.task-container{
+  height: 15%;
+  width: 95%;
+  align-content: left;
+  text-align: left;
+  font-family: sans-serif;
+  box-sizing: border-box;
+  background-color: white;
+  border-radius: 5px;
+  margin: 10px;
+  box-shadow:5px 5px 10px gray;
+}
+/* task status container */
+.task-status-container{
+  display: flex;
+  gap:30px;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+.task-circle{
+  position: relative;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: conic-gradient(#ccc 0deg, #eee 0deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.inner-circle{
+  position: absolute;
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+}
+.percent-text{
+  position: relative;
+  font-size: 16px;
+  font-weight: bold;
+}
+.label{
+  margin-top:10px;
+  font-size: 16px;
+  color:#555;
+}
+/* completed task */
+.column3 {
+  display:block;
+  margin-bottom: 16px;
+  line-height: 1.5;
+  float: right;
+  width: 30%;
+  padding: 10px;
+  background-color: lightgray;
+  height: 700px; 
+}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* Should be removed. Only for demonstration */
+
+.comp-task-container{
+  display: block;
+  height: 15%;
+  width: 90%;
+  align-content: left;
+  text-align: left;
+  font-family: sans-serif;
+  box-sizing: border-box;
+  background-color: white;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 10px;
+  box-shadow:5px 5px 10px gray;
 }
