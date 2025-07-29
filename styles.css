@@ -64,7 +64,24 @@ bar vertically, instead of horizontally */
   padding: 10px;
   margin-left: 15%;
   background-color: lightgray;
-  height: 1000px; /* Should be removed. Only for demonstration */
+  height: 1000px; 
+}
+/* On screens that are less than 700px wide, make 
+the content section */
+@media screen and (max-width: 700px){
+  .column1{
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+}
+/* On screens that are less than 400px, make 
+the content section  */
+@media screen and (max-width: 400px){
+  .column1{
+    text-align: center;
+    float: none;
+  }
 }
 /* Create two equal columns that floats next to each other */
 .column2 {
@@ -132,6 +149,8 @@ bar vertically, instead of horizontally */
   font-size: 16px;
   color:#555;
 }
+/*Task Status Dashboard*/
+
 /* completed task */
 .column3 {
   display:block;
@@ -227,21 +246,75 @@ bar vertically, instead of horizontally */
 .task-container button {
   background-color: #e7e7e7;
   border:none;
-  padding: 15px 32px;
+  padding: 5px 12px;
   text-align: center; 
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
   margin: 4px 2px;
   cursor: pointer;
-  color: black;
+  color: white;
   border-radius: 10px;
 }
 .task-container button.button1{
   background-color: #008CBA;
-  color: black;
 }
 .task-container button.button2{
   background-color: #f44336;
-  color: black;
+}
+/* test js */
+.crud-app {
+  width: 300px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background: #f8fafc;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  border-radius: 8px;
+}
+input {
+  width: 70%;
+  padding: 0.5rem;
+}
+button {
+  padding: 0.5rem;
+  margin-left: 5px;
+}
+li {
+  margin: 0.5rem 0;
+}
+.edit-btn, .delete-btn {
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+/* input text box  */
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
 }

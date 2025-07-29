@@ -2,10 +2,11 @@
 <html lang="en">
 <head>
     <title>To-Do-List</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
- <link rel="stylesheet" type="text/css" href="styles.css">
 <body>
 <!-- sidebar/menu -->
 <div class="sidebar">
@@ -18,7 +19,16 @@
   <div class="column1">
     <h2 class="title">TO-DO</h2>
     <p class="para">28 July 2025</p>
-    <h2 class="add-container">+ Add Task</h2><br>
+    <div class="task-container">
+        <form action="/action_page.php">
+            <label for="fname">Task title</label>
+            <input type="text" id="fname" name="firstname" placeholder="Task title">
+            <label for="lname">Task description</label>
+            <input type="text" id="lname" name="lastname" placeholder="Task description">
+            <button class="button button2"  onclick=addTask()>add task</button>
+        </form>
+    </div>
+    <ul id="taskList"></ul>
     <div class="task-container">
         <div class="task-imag"><img src="images/task1.jpg" alt="task-image"></img></div>
         <h3>Task title</h3>
