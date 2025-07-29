@@ -166,10 +166,16 @@ bar vertically, instead of horizontally */
   box-shadow:5px 5px 10px gray;
 }
 /*image adjustments*/
+.task-imag{
+  margin: 5px;
+  margin-bottom:10px;
+  border: 1px solid #ccc;
+  float: right;
+  width: 180px;
+}
 .task-imag img{
-  height: 20%;
-  width: 20%;
-  padding: 10px;
+  width: 100%;
+  height: auto;
 }
 /*add task container */
 .add-container{
@@ -216,4 +222,26 @@ bar vertically, instead of horizontally */
 }
 .body{
   background-color: lightblue;
+}
+/* button adjustments and colors */
+.task-container button {
+  background-color: #e7e7e7;
+  border:none;
+  padding: 15px 32px;
+  text-align: center; 
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  color: black;
+  border-radius: 10px;
+}
+.task-container button.button1{
+  background-color: #008CBA;
+  color: black;
+}
+.task-container button.button2{
+  background-color: #f44336;
+  color: black;
 }
