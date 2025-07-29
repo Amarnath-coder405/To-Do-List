@@ -1,4 +1,4 @@
-h1 h2 h3 h4 h4 p{
+head body h1 h2 h3 h4 h4 p{
   font-family: sans-serif;
 }
 *{
@@ -64,7 +64,7 @@ bar vertically, instead of horizontally */
   padding: 10px;
   margin-left: 15%;
   background-color: lightgray;
-  height: 800px; /* Should be removed. Only for demonstration */
+  height: 1000px; /* Should be removed. Only for demonstration */
 }
 /* Create two equal columns that floats next to each other */
 .column2 {
@@ -94,6 +94,7 @@ bar vertically, instead of horizontally */
   background-color: white;
   border-radius: 5px;
   margin: 10px;
+  box-sizing: border-box;
   box-shadow:5px 5px 10px gray;
 }
 /* task status container */
@@ -117,8 +118,8 @@ bar vertically, instead of horizontally */
 }
 .inner-circle{
   position: absolute;
-  width: 75px;
-  height: 75px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
 }
 .percent-text{
@@ -163,4 +164,56 @@ bar vertically, instead of horizontally */
   margin: 10px;
   padding: 10px;
   box-shadow:5px 5px 10px gray;
+}
+/*image adjustments*/
+.task-imag img{
+  height: 20%;
+  width: 20%;
+  padding: 10px;
+}
+/*add task container */
+.add-container{
+  font-family: sans-serif;
+  text-align: right;
+  color: green;
+}
+/* add title container*/
+.title{
+  font-family: sans-serif;
+  color: darkblue;
+}
+/* task status container */
+.task-status{
+  font-family: sans-serif;
+  color: darkblue;
+}
+/* para container */
+.para{
+  font-family: sans-serif;
+}
+.label{
+  font-family: sans-serif;
+  color: red ;
+}
+.comp-label{
+  font-family: sans-serif;
+  color: green;
+}
+.pro-label{
+  font-family: sans-serif;
+  color: orange;
+}
+.not-label{
+  font-family: sans-serif;
+  color: red;
+}
+.percent-text{
+  font-family: sans-serif;
+  color: black;
+}
+.column3{
+  font-family: sans-serif;
+}
+.body{
+  background-color: lightblue;
 }
